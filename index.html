@@ -4,84 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./practice.css">
     <style>
-        ul li a{
-  text-decoration: none;
-  color: white;
-}
-ul li{
-    display: inline;
-    padding: 10px;
-    margin: 10px;
-}
-ul{
-    background-color: black;
-    height: 20px;
-    padding: 5px;
-    margin: 2px;
-    width: 100%;
-    position: fixed;
-}
-a:hover{
-    color: brown;
-}
-#one{
-    background-image: url(https://cdn.pixabay.com/photo/2015/05/15/02/09/computer-767784_1280.jpg);
-    height: 130vh;
-    margin: -10px;
-   color: white;
-   background-size: cover;
-}
-#two{
-    text-align: center;
-    padding: 12%;
-}
-button{
-    border: 5px solid black;
-    border-radius: 10px;
-    background-color: green;
-    padding: 10px;
-    color: black;
-}
-button:hover{
-    background-color:lightgreen ;
-    cursor: pointer;
-    color: white;
-}
-#title{
-    font-size: 20px;
-    color: yellowgreen;
-    padding: 10px;
-   margin: 10px;
-}
-   
+        .container{
+           
+            background-color: black;
+            color: white;
+            height: 10vh;
+            display: flex;
+            position: fixed;
+            align-items: center;
+            width: 180%;
+        }
+        .div_list{
+            display: inline;
+            padding: 50px;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        div[id="one"]{
+            font-size: 30px;
+            margin-left: -20px;
+        }
+        #zero{
+            background-image:
+             url('https://media.istockphoto.com/id/2173915109/photo/skill-competency-development-concept-up-new-ability-skill-training-for-technology-evolution.jpg?s=2048x2048&w=is&k=20&c=EntBZe7FHA2R7aGAA8OlfMgN7aoLf95MwU3ZOTk0iIU=');
+             height: 100vh;
+             background-size: cover;
+        }
+        h1{
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding-top: 200px;
+            
+        }
+        button{
+            margin-left: 700px;
+            border: 2px solid black;
+            border-radius: 5px;
+            color: black;
+            background-color: black;
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+         
+          @media (max-width: 768px) {
+            .div_list {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+            #one {
+                font-size: 20px;
+            }
+
+            #zero h1 {
+                font-size: 1.5rem;
+            }
+
+            #zero p {
+                font-size: 13px;
+            }
+
+            button {
+                display: block;
+                margin: 20px auto;
+            }
+        }
+         
     </style>
 </head>
 <body>
-    <ul type="none">
-        <li><a href=""id="title">Reddy Technologies</a></li>
-        <li><a href="./Home.html">Home</a></li>
-        <li><a href="./About.html">About</a></li>
-        <li><a href="./contact.html">contact</a></li>
-        <li><a href="">Blogs</a></li>
-    </ul>
-    <div id="one">
-        <div id="two">
-        <h1>welcome to my world</h1>
-        <p>Python is a high-level, general-purpose programming language renowned for its clear,
-             readable syntax and versatility. Created by Guido van Rossum and first released in 1991, 
-             its design emphasizes code readability with significant use of indentation.</p>
-             <button>Learn more</button>
+    <div class="container">
+        <div id="one" class="div_list" style="color: orangered;">Besant Technologies</div>
+        <div id="two" class="div_list"><a href="./home.html">Home</a></div>
+        <div id="three" class="div_list"><a href="./about.html">About</a></div>
+        <div id="four" class="div_list">Contact</div>
+        <div id="five" class="div_list">Blogs</div>
+        <div id="six" class="div_list"> <a href="./register.html">Registar</a></div>
+        <div id="seven" class="div_list"><a href="">Sign in</a></div>
     </div>
+    <div id="zero">
+        <h1>Welcome to Besant technologies </h1>
+        <p> Technologies is a well-known IT training and placement institute in India, especially in Chennai and Bangalore,
+             run by BDreamz Global Solutions Pvt. Ltd. since around 2009. It offers a wide range of classroom and online courses in
+              areas such as Data Science, Python, Full-Stack Development, Cloud Computing, DevOps, and Software Testing. The institute
+               highlights hands-on training with real-time projects, flexible batch timings, free demo classes, and placement assistance 
+               including resume preparation and mock interviews. While it is popular and affordable, the quality of training and placement
+                support can vary by trainer and branch, so prospective students are advised to check reviews and clarify job-guarantee
+                 conditions before enrolling.</p>
+                 <button> <a href="https://www.besanttechnologies.com/branches/besant-technologies-marathahalli-bangalore" target="blank">Learn more</a></button>
     </div>
-    <h1>My name is Jyothi jagadeeshwar reddy, I am from Kadapa. I have recently completed my
-          Graduation in Electronics and Communication Engineering from Vel Tech
-          University. Currently, I am learning Python full stack development. I
-          have good knowledge of Python basics, OOPs concepts, and
-          problem-solving. I am a quick learner and I am very interested in
-          starting my career as a Python developer. My goal is to work in a
-          reputed company where I can improve my skills and contribute to
-          the team’s success</h1>
 </body>
 </html>
